@@ -322,7 +322,7 @@ mark{
 }
 
 .midSquare {
-    background-image: url("photos/tojsemja.jpg");
+    background-image: url("tojsemja.jpg");
     background-size: cover;
     background-position: center;
     height: 670px;
@@ -352,7 +352,7 @@ mark{
     background-position: center;
 }
 .rightDownSquare{
-    background-image: url("photos/macbookphotoshop2.jpeg");
+    background-image: url("macbookphotoshop2.jpeg");
 
 }
 /* Media query for adjusting image size on smaller devices */
