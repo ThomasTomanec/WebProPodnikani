@@ -1,0 +1,258 @@
+
+@font-face {
+    font-family: SfPro-Bold;
+    src: url('fonts/SF-Pro-Text-Bold.otf');
+}
+
+@font-face {
+    font-family: SfPro-Medium;
+    src: url('fonts/SF-Pro-Display-Light.otf');
+}
+
+@font-face {
+    font-family: SfPro-Light;
+    src: url('fonts/SF-Compact-Display-Medium.otf');
+}
+
+@font-face {
+    font-family: SfPro-Thin;
+    src: url('fonts/SF-Pro-Text-Thin.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-size: 120%;
+    line-height: 1.618;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+
+}
+
+h1{
+    font-family: SfPro-Bold;
+}
+header{
+    width:100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+
+}
+#chk1{
+    display: none;
+
+
+}
+i{
+    color: #black;
+    cursor: pointer;
+}
+header .logo{
+    flex: 1;
+    color: black;
+    margin-left: 40px;
+    font-size: 1.3vw;
+    font-family: SfPro-Bold;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+header ul li{
+    padding-right: 30px;
+    list-style: none;
+    font-family: SfPro-Medium;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid black;
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+
+.active-page{
+    font-family: SfPro-Bold;
+    background-image: linear-gradient(90deg, black, #171717);
+    background-repeat: no-repeat;
+    background-size: 100% 4px;
+    background-position: bottom;
+}
+.fa-bars{
+    font-size: 25px;
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top:0px;
+        right: -100%;
+        width:25%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+        top: 74px;
+    }
+
+    header ul li{
+        list-style: none;
+        padding: 20px;
+    }
+
+    header .menu{
+        z-index: 999;
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    .anotherpages{
+        border-radius: 25px 0 0 25px;
+        filter: drop-shadow(-17px 0px 60px black);
+        background: rgb(255 255 255);
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.kontakty{
+    text-align: left;
+    margin: 7vw 5vw;
+    text-align: left;
+}
+
+.kontakty h1{
+    font-size: 3vw;
+    font-family: SfPro-Bold;
+}
+.kontakty p{
+    font-size: 2vw;
+    font-family: SfPro-Medium;
+}
+
+.plakat {
+    height: 40vw;
+    width: auto;
+}
+
+select#langSelector {
+    color: black;
+    border-radius: 20px;
+    height: 35px;
+    width: 90px;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+    margin-left: 4px;
+}
+
+select#langSelector option {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+}
+
+select#langSelector option:hover {
+    background-color: #ccc;
+}
+
+
+
+.pagecon {
+    padding: 100px 10px;
+}
+
+.part1con{
+}
+
+mark{
+    background: #5ad34d;
+}
+
+b{
+    color: black;
+}
+
+.informace-footer {
+    padding: 0px 57px;
+    text-align: left;
+    display: inline-grid;
+    font-size: 12px;
+    color: #7d7d7d;
+
+}
+.h7 {
+    padding: 5px 0px;
+}
+
+.kam-dale {
+    text-align: center;
+    margin: 10px;
+}
+
+.odkazy a
+{
+    text-align: center;
+    font-family: SfPro-Medium;
+    color: gray;
+}
+
+a.active-page {
+    font-family: SfPro-Bold;
+    color: black;
+}
+
+@media screen and (max-width: 1300px){
+}
+@media screen and (max-width: 1130px) {
+}
+@media screen and (max-width: 750px) {
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgba(230, 238, 249, 0.5);
+}
+
+
+.sub2header{
+    color: #7d7d7d;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 2.5vw;
+    font-family: SfPro-bold;
+}
+
+
+@media screen and (max-width: 900px)  {
+}
+
+@media screen and (max-width: 700px)  {
+}
